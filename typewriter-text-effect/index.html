@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="">
+	<link rel="icon" type="image/x-icon" href=""/>
+</head>
+    
+<style type="text/css">
+ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ 
+    body{
+       background-color: #000; 
+    }
+    
+    .target { margin-top: 200px; position: relative; }
+    
+    .target h2{
+       background-color: #000; color: #FFF; font-size: 3.5rem; font-family: 'Poppins'; text-align: center;  margin-top: 3.5rem; position: relative; 
+    } 
+    
+</style>    
+
+<body>
+	 
+    <div class="target" >
+        <h2 id="typewriter">Typewriter text effect using JavaScript</h2>
+    </div>
+ 
+</body>
+    
+    <script type="text/javascript">
+    
+        let text = document.getElementById('typewriter');
+    
+        const textArray = text.textContent.split("");
+        
+                let animateText = ''; 
+        
+        textArray.forEach( (value, index) => {
+            
+            setTimeout( () => {
+                animateText += value; 
+                text.innerHTML = animateText;
+            }, index*500);
+            
+        });
+            
+          
+          
+           
+            
+       
+        
+        
+        
+    </script>
+
+</html>
