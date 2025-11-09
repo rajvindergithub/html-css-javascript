@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Hover Effect</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="">
+	<link rel="icon" type="image/x-icon" href=""/>
+</head>
+    
+    <style type="text/css">
+        body{
+            height: 100vh; display: flex; align-items: center; justify-content: center; 
+        }
+        
+        a{
+            padding: 40px 80px; font-family: sans-serif; text-decoration: none;  color: #262626; font-size: 45px; letter-spacing: 2px; border: 5px solid #262626; position: relative; transition: 1s; 
+        }
+        
+        a::before{
+            content: '';
+            position: absolute;
+            top: 0px; 
+            left: 0px; 
+            width: 100%; 
+            height: 100%; 
+            background-color: #262626; 
+            transition: 1s; 
+            transform: rotateX(90deg); 
+            z-index: -1;
+        }
+        
+         a::after{
+            content: '';
+            position: absolute;
+            top: 0px; 
+            left: 0px; 
+            width: 100%; 
+            height: 100%; 
+            background-color: #262626; 
+            transition: 1s; 
+            transform: rotateY(90deg); 
+            z-index: -1;
+        }
+        
+        a:hover:before{
+            transform: rotateX(0deg);  
+        }
+        
+        a:hover:after{
+            transform: rotateX(0deg);  
+        }
+        
+        a:hover{
+            color: #FFF; 
+        }
+        
+    </style>
+
+<body>
+	  <a href="#">Hover me</a>
+</body>
+
+</html>

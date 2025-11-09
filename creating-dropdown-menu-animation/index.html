@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="">
+	<link rel="icon" type="image/x-icon" href=""/>
+</head>
+    <style type="text/css">
+        body{
+            margin: 50px; 
+            font-family: sans-serif; 
+        }
+        .dropdown{
+            position: relative; 
+            display: inline-block; 
+        }
+        button{
+            padding: 10px 20px;
+            background: #111; 
+            color: #fff;
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+        }
+        .menu{
+            position: absolute; 
+            top: 110%; 
+            left: -20px; 
+            background: #FFF; 
+            border-radius: 6px; 
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            opacity: 0; 
+            transform: scale(0.95);
+            transition: 0.2s ease;
+            pointer-events: none; 
+        }
+        .dropdown:hover .menu{
+            opacity: 1; 
+            transform: scale(1);
+            pointer-events: auto; 
+        }
+        .menu a{
+            display: block; padding: 10px 20px; text-decoration: none; 
+            color: #333; 
+        }
+        
+        .menu a:hover{
+            background: #f2f2f2; 
+        }
+        
+        .menu ul{ list-style: none; margin-left: -30px; }
+        
+    </style>
+<body>
+	<div class="dropdown">
+        <button>Menu</button>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

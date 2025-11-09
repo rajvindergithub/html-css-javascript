@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Example Title</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="icon" type="image/x-icon" href="" />
+</head>
+
+<body>
+
+    <style type="text/css">
+        #circle-orbit-container {
+            position: relative;
+            text-align: center;
+            margin: auto;
+            width: 500px;
+            max-width: 100%;
+            top: 10px; 
+        }
+
+        #inner-orbit {
+            position: absolute;
+            top: 75px;
+            left: 75px;
+            width: 350px;
+            height: 350px;
+            border: 2px #4A437F dashed;
+            border-radius: 100%;
+            animation: spin-right 10s linear infinite;
+        }
+
+        .inner-orbit-cirlces {
+            position: absolute;
+            height: 75px;
+            width: 75px;
+            border-radius: 100%;
+            background-color: #9F98E6;
+
+        }
+
+        .cirlce-one {
+            top: calc(100px * 2);
+            left:  calc(-10% * 1);
+        }
+        
+           .cirlce-two {
+            top: calc(100px * 3);
+            left: calc(-10% * 2);
+        }
+        
+           .cirlce-three {
+            top: calc(100px * 4);
+            left:  calc(-10% * 3);
+        }
+        
+           .cirlce-four {
+            top: calc(100px * 5);
+            left:  calc(-10% * 4);
+        }
+        
+           .cirlce-five {
+            top: calc(100px * 6);
+            left:  calc(-10% * 5);
+        }
+        
+           .cirlce-six {
+            top: calc(100px * 7);
+            left:  calc(-10% * 6);
+        }
+
+        @-webkit-keyframes spin-right {
+            100% {
+/*                transform: rotate(180deg);*/
+            }
+        }
+
+    </style>
+
+    <div>
+        <h1 style="text-align: center; text-transform: uppercase;">Orbit Animation</h1>
+    </div>
+
+    <div id="circle-orbit-container">
+        <div id="inner-orbit">
+            <div class="inner-orbit-cirlces  cirlce-one"></div>
+            <div class="inner-orbit-cirlces  cirlce-two"></div>
+            <div class="inner-orbit-cirlces  cirlce-three"></div>
+            <div class="inner-orbit-cirlces  cirlce-four"></div>
+            <div class="inner-orbit-cirlces  cirlce-five"></div>
+            <div class="inner-orbit-cirlces  cirlce-six"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

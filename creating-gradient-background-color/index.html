@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="">
+	<link rel="icon" type="image/x-icon" href=""/>
+</head>
+    
+<style type="text/css">
+    body{
+        display: flex; 
+        margin: 0; 
+        height: 100vh; 
+        overflow: hidden; 
+        position: relative; 
+        font-family: sans-serif; 
+    }
+    .left, .right {
+        flex: 1; 
+        transition: background 0.5s; 
+        background: #222; 
+    }
+    .left:hover{
+        animation: gradient 5s ease infinite;
+        background: linear-gradient(-45deg, #ff6ec4, #7873f5, #4adede, #53ff45); 
+        background-size: 400% 400%;
+    }
+    .right:hover{
+        animation: gradient 5s ease infinite;
+        background: linear-gradient(-45deg, #fca5a5, #fdba74, #fcd34d, #bbf7d0); 
+        background-size: 400% 400%;
+    }
+    .message{
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        font-size: 3rem; 
+        color: #ff0000;
+        pointer-events: none; 
+        animation: bounce 2s infinite; 
+        text-transform: uppercase; font-weight: bold; 
+    }
+    
+    @keyframes gradient{
+        0%{ background-position: 0% 50%}
+        50%{ background-position: 100% 50%}
+        100%{ background-position: 0% 50%}
+        
+    }
+    
+    @keyframes bounce{
+        0%, 100%{ transform: translate(-50%, -50%) translateY(0)} 
+        50%{ transform: translate(-50%, -50%) translateY(-20px)} 
+    }
+    
+</style>    
+
+<body>
+	 <div class="left"></div>
+	 <div class="right"></div>
+	 <div class="message">Welcome to My Studio</div>
+</body>
+
+</html>

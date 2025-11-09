@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Bouncing Text</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="">
+	<link rel="icon" type="image/x-icon" href=""/>
+</head>
+
+    <style type="text/css">
+        body{
+            background-color: rgba(0,0,0,0.1);
+            font-family: monospace;
+            padding: 100px; 
+            text-align: center; 
+        }
+        .typing-text{ font-size: 3.5rem; display: inline-block; white-space: nowrap; overflow: hidden; border-right: 2px solid #000; width: 100%; 
+            animation:  typing 3s steps(200) forwards, 
+                        blink 0.75s step-end infinite, 
+                        bounce 0.6s ease 3s infinite alternate;
+                      
+        }
+        
+        @keyframes typing{
+            from { width: 0px}
+            to { width: 450px}
+        }
+        
+        @keyframes blink{
+            50% { border-color: transparent; }
+        }
+        
+        @keyframes bounce{
+            from{ transform: translateY(0px)}
+            to { transform: translateY(-3px)}
+        }
+        
+    </style>
+    
+<body>
+	 <h1 class="typing-text">Welcome to Our Website</h1>
+</body>
+
+</html>

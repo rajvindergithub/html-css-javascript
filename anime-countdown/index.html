@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="">
+	<link rel="icon" type="image/x-icon" href=""/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" referrerpolicy="no-referrer"></script>
+    <style type="text/css">
+        body{
+            overflow: hidden; margin: 0px;padding: 0px; 
+        }
+        #timer{
+            font-size: 6rem; 
+            text-align: center; 
+            margin-top: 4rem; font-family: monospace; overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+	 <div id="timer">00:00:00</div>
+</body>
+
+    <script type="text/javascript">
+        let hours = 1; 
+        let mintues = 30; 
+        let seconds = 0; 
+        
+        let totalSeconds = hours * 3600 * mintues * 60 + seconds; 
+        console.log(totalSeconds);
+        
+        function updateTimer() {
+            const h = Math.floor(totalSeconds/3600).toString().padStart(2,'0');
+            const m = Math.floor( (totalSeconds % 3600)/60 ).toString().padStart(2,'0');;
+            const s = Math.floor(totalSeconds % 60).toString().padStart(2,'0');
+            document.getElementById('timer').textContent = `${h} : ${m} : ${s}`; 
+           
+            anime({
+                targets: '#timer',
+                rotate: 360,
+                duration: 1000, 
+                easing: 'linear',
+                backgroundColor: ['#e53f3f', '#ff0000', '#0000ff', '#ffff00', '#0000ff'],
+            });
+            
+        }
+         
+        setInterval( () => {
+            
+            if(totalSeconds <= 0){
+                clearInterval(); 
+                console.log('Time Up');
+            }
+            
+            totalSeconds--; 
+            updateTimer(); 
+        }, 1000);
+        
+    </script>
+    
+</html>

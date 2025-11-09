@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" referrerpolicy="no-referrer"></script>
+    
+</head>
+    
+    <style type="text/css">
+        body{
+            margin: 0; 
+            height: 100vh; 
+            position: relative; 
+            overflow: hidden;
+        }
+        
+        .circle{
+            width: 100px; 
+            height: 100px;
+            background-color: orange; 
+            border-radius: 50%; 
+            position: absolute; 
+            transform: translate(-50%, -50%); 
+            top: 50%; 
+            left: 50%; 
+            cursor: pointer; 
+        }
+        
+    </style>
+
+<body>
+	
+  <div class="circle"></div>  
+    
+</body>
+    
+    <script type="text/javascript">
+        const circle = document.querySelector('.circle');
+        let animation = null; 
+        
+        document.addEventListener('mousemove', (e) => {
+            
+            if(animation){
+                animation.pause(); 
+            }
+            
+            animation = anime({
+                targets: circle, 
+                left: e.clientX, 
+                top: e.clientY, 
+                duration: 1000, 
+                easing: 'easeOutElastic(1, 0.5)'
+            });
+            
+        });
+        
+    </script>
+
+</html>
