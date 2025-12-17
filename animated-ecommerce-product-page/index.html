@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="">
+	<link rel="icon" type="image/x-icon" href=""/>
+    <style type="text/css">
+        .flip-card{ perspective: 1000px; }
+        
+        .flip-inner{
+            transition: transform 0.6; 
+            transform-style: preserve-3d; 
+        }
+        
+        .flip-card:hover .flip-inner{
+            transform: rotateY(180deg);
+            
+        }
+        
+        .flip-front, 
+        .flip-back{
+            backface-visibility: hidden; 
+            -webkit-backface-visibility: hidden; 
+        }
+        
+        .flip-back{
+            transform: rotateY(180deg); 
+        }
+        
+    </style>
+    
+    <script type="text/javascript" src="https://cdn.tailwindcss.com/3.4.17"></script>
+</head>
+
+<body class="flex items-center justify-center bg-gray-100">
+	<div class="flip-card w-80 h-[28rem]">
+        <div class="flip-inner w-full h-full relative rounded-xl shadow-lg">
+            <div class="flip-front absolute w-full g-full bg-white rounded-xl flex flex-col items-center justify-center p-4">
+                <img src="https://myfreeonlinetools.com/url-utm-builder/images/utm-url-builder.jpg" class="w-48 h-48 object-cover rounded-md mb-4 shadow" />
+                <h2 class="text-xl front-bold text-gray-800 text-center">
+                    Wireless Headphone
+                </h2>
+            </div>
+            <div class="flip-back absolute w-full h-full bg-blue-600 text-white rounded-xl flex flex-col items-center justify-center p-6 space-y-4">
+                <p class="text-2xl front-bold">$35.00</p>
+                <p class="text-sm text-center">
+                    Experience hight quality sound and seamless bluetooth connectivity with our wireless headphones. Perfect for music
+                </p>
+                <button class="mt-4 bg-white text-blue-600 front-semibold px-4 py-2 rounded-md shadow hover:bg-blue-100 transition">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
