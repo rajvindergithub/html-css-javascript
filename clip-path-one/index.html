@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rectangle Clip Path</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="icon" type="image/x-icon" href="" />
+</head>
+
+<style type="text/css">
+    .triangle {
+        background-color: brown;
+        height: 300px;
+        width: 600px;
+        margin: 20vh auto;
+        clip-path: path("M 20,0 L 480,0 A 20,20 0,0,1 500,20 L 500,200 A 20,20 0,0,1 480,220 L 350,220 A 20,20 1,0,0 330,240 L 330,280 A 20,20 0,0,1  310,300 L 20,300 A 20,20 0,0,1  0,280 L 0,20 A 20,20 0,0,1  20,0 Z");
+         
+        padding: 5rem;
+        font-size: 2rem;
+        color: #FFF; 
+        font-family: sans-serif; 
+    }
+    
+    .class_clip_path{ position: relative; height: 280px; width: 400px;  }
+    .tag_sale{ position: absolute; right: -100px; bottom: -20px; font-size: 2rem; font-weight: bold; background-color: #000; color: #FFF;  padding: 1rem 1.3rem; border-radius: 20px;  animation: fadeToggle 1s linear infinite;    }
+    
+  @keyframes fadeToggle {
+  0% {
+    opacity: 0.5;
+    visibility: hidden;
+  }
+  25% {
+    opacity: 1;
+    visibility: visible;
+  }
+  75% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+</style>
+
+<body>
+    <div class="class_clip_path">
+        <div class="triangle">
+            myfreeonlinetools
+        </div>
+        <div class="tag_sale">
+            50% Off
+        </div>
+    </div>
+</body>
+
+</html>

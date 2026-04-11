@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Example Title</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="icon" type="image/x-icon" href="" />
+</head>
+
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Poppins';
+    }
+
+    header {
+        width: 100%;
+        background-color: #000;
+        
+    }
+
+    .container {
+        width: 1170px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    nav>ul {
+        display: flex;
+        column-gap: 30px;
+        list-style: none;
+        height: 100%;
+        align-items: center;
+    }
+    
+    nav>ul:first-child>li>a{
+         color: #FFF;
+        text-decoration: none;
+    }
+
+    nav>ul>li>a {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .megamenu {
+        position: absolute;
+        width: 100%;
+        box-shadow: 0px 5px 5px 0px lightblue;
+        left: 0px;
+        top: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.25s; 
+        z-index: 1; border-radius: 0px 0px 10px 10px; 
+    }
+
+    nav>ul>li:hover .megamenu {
+        opacity: 1;
+        visibility: visible;
+        top: 95%;
+    }
+    
+    .megamenu{ display: flex; justify-content: space-between; align-items: flex-start; padding: 10px 40px 40px 40px; flex-wrap: wrap;    }
+    .megamenuitems{ flex-basis: 25%; }
+    .megamenuitems ul{ list-style: none;}
+    .megamenuitems ul li a{ text-decoration: none; color: #000;  }
+    
+    .megamenuitems h3{ margin: 10px 0px; }
+    
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="http://myfreeonlinetools.com/new-images/logo.png" style="height: 60px;filter: invert(1); " />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li>
+                        <a href="">Services</a>
+                        <div class="megamenu">
+                             <div class="megamenuitems">
+                                <h3>Development</h3>
+                                <ul>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>Development</h3>
+                                <ul>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>Development</h3>
+                                <ul>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>Development</h3>
+                                <ul>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>Development</h3>
+                                <ul>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="">Training</a></li>
+                    <li><a href="">Student's Zone</a></li>
+                    <li><a href="">Testimonial</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+
+</body>
+
+</html>
